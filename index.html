@@ -11,11 +11,27 @@
         <img src="Music Note.jpg" width="100" height="100">
         <h2>Project Description</h2>
             <div class="description">
-                <p> I want to explore how neural networks can be used to generate music. The project will take particular genre(s) of music and train a neural network to generate
-                    its own music files that hopefully captures "elements" of the genre. By elements of the genre I mean melodic patterns, harmonies, textures, etc that appear in
-                    different genres of music that make them recognizable as being in that genre. The idea isn't necessarily to emulate real compositions or have the music sound 
-                    "human-like" but just to see of the generated music is somewhat recognizable as being in that genre. This could provide a new (non-rigourous) angle for
-                    analysing music by observing what patterns the neural network learns.
+                <p> Neural network used in:
+                    https://benanne.github.io/2014/08/05/spotify-cnns.html
+                    
+                    Dataset:
+                    1 million 30-second excerpts taken from the middle of Spotify’s most popular tracks.
+                    0.5 million for training
+                    5000 for online validation
+                    Rest for testing
+
+                    Type of network (just an example):
+                    Convolutional NN (designed for audio signals rather than images)
+                    4 convolutional layers
+                    3 dense layers
+
+                    Input:
+                    Mel-spectrograms obtained from audio signals
+                    (599, 128)
+
+                    Output:
+                    Predicts 40 latent factors taken from Spotify’s collaborative filtering models
+                    (40, 1)
                 </p>
             </div>
         <h2>Project Goals</h2>
