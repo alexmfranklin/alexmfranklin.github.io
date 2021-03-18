@@ -17,6 +17,7 @@
         <h3>An ethical investigation into Spotify recommendations</h3> 
         <p>Becky Zhang and Alex Franklin | March 17, 2021</p>
           
+          <h2> Introduction </h2>
           <p> 
               Much of our consumption of music is dictated by the algorithms and models behind streaming service recommendations, which are impacted by the user data that they collect. The architecture of these models, and biases in their data, has real-life implications on what music is played. To investigate these implications, we need to understand what models are used by Spotify, as well as what data is collected and how it is used.
           </p>
@@ -32,9 +33,20 @@
           <p>
               We will first have to develop a more concrete understanding of how these neural networks are functioning (what kind of data and tools they're using) and the goals and decision-making processes of Spotify's development team, to the best of our ability. We will review available research related to Spotify’s recommendation procedures and examine them through a technical and ethical lens. Our hope is to unpack how Spotify uses neural networks to generate music recommendations; identify key blind spots and biases; and assess the broader ethical implications of these, proposing solutions where possible.
           </p>
-        
-
-      
+          
+          <h2> Related Works </h2>
+          <ol>
+              <li>
+                  <a href="https://web.stanford.edu/~rezab/nips2014workshop/submits/logmat.pdf">Logistic Matrix Factorization for Implicit
+                      Feedback Data</a> <br>
+                  This Stanford research paper by a Spotify engineer presents logistic matrix factorization as a tool for collaborative filtering, one of the three deep learning tools Spotify uses to make recommendations based on implicit user feedback data. This offers a more concrete explanation of one way to effectively conduct collaborative filtering.
+              </li>
+              <li>
+                  <a href="https://dl.acm.org/doi/abs/10.1145/3366423.3380281?casa_token=vDRONauZb0oAAAAA:7WQ_BxL-nXgJPL4d2jPLyL9N9avIMfEWW5iJ7roEMjDBN7SxPQHfm0kspK_LuBipr9x7N9Yi4p90YQ">
+                      Algorithmic Effects on the Diversity of Consumption on Spotify</a> <br>
+                  This research article highlights a key flaw to collaborative filtering models: their reliance on existing implicit user data generates recommendations biased toward older and more popular songs, compromising and actively reducing the diversity of music which people using their recommendations consume. 
+              </li>
+          </ol>
       </div>
     </div>
   </body>
